@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "yomiuri"
+version = "0.1.0"
+description = ""
+authors = ["WorldObservationLog <wolc@duck.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tomli = "^2.0.1"
+bilibili-api-python = "^16.1.1"
+click = "^8.1.7"
+pydantic = "^2.5.3"
+loguru = "^0.7.2"
+tenacity = "^8.2.3"
+python-socketio = {extras = ["asyncio-client"], version = "^5.11.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yomiuri = "yomiuri.yomiuri:cli"
