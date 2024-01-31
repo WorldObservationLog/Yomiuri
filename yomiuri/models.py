@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 
 from pydantic import BaseModel, SerializeAsAny
 
@@ -36,7 +36,7 @@ class StopListening(Data):
 
 class DataPack(BaseModel):
     action: str
-    data: Optional[dict | SerializeAsAny[Data]]
+    data: Optional[Union[dict, SerializeAsAny[Data]]]
 
 
 class Actions:

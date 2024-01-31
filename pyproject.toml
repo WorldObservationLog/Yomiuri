@@ -6,7 +6,7 @@ authors = ["WorldObservationLog <wolc@duck.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.8"
 tomli = "^2.0.1"
 bilibili-api-python = "^16.1.1"
 click = "^8.1.7"
